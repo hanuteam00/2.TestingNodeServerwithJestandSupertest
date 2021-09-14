@@ -1,0 +1,14 @@
+//Reference: https://sammeechward.com/testing-an-express-app-with-supertest-and-jest/
+
+App Setup
+The setup for this app will contain the following three files:
+
+app.js: Contains the express code to define and implement all of the HTTP routes.
+app.test.js: Imports app.js and tests all of the endpoints.
+server.js: Imports app.js and binds it to port 8080.
+server.js will act as the entry point of the entire back end application that we can run with node 
+server.js, and app.js only contains express specific code. We’ll see this separation come in handy even more in future articles.
+
+
+What Are We Testing?
+So in the test file, we are going to test that a POST request to /users works correctly. What does that mean? What exactly are we going to test?
